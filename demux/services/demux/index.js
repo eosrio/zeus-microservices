@@ -1,7 +1,8 @@
 #!/usr/bin/env node 
 require("babel-core/register");
 require("babel-polyfill");
-require('daemonize-process')();
+if(process.env.DAEMONIZE_PROCESS)
+    require('daemonize-process')();
 // const fetch = require('node-fetch');                          
 const { TextDecoder, TextEncoder } = require('text-encoding');
 const WebSocket = require('ws');
