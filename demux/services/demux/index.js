@@ -8,7 +8,7 @@ const { TextDecoder, TextEncoder } = require('text-encoding');
 const WebSocket = require('ws');
 var pako = require('pako');
 
-const ws = new WebSocket('ws://localhost:8889', {
+const ws = new WebSocket(`ws://${process.env.NODEOS_HOST || 'localhost'}:${process.env.NODEOS_WEBSOCKET_PORT || '8889'}`, {
 perMessageDeflate :false
     
 });
