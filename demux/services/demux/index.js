@@ -61,8 +61,8 @@ const handlers = {
     "*": {
         "*": {
             "*": async (account, method, code, actData, ev) => {
-                console.log(account, method, code, actData);
-                console.log(ev);
+                // console.log(account, method, code, actData);
+                // console.log(ev);
                 let curr = await loadEvents();
                 if (!curr[ev['etype']]) return;
                 curr = curr[ev['etype']];
