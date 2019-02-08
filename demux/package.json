@@ -1,0 +1,11 @@
+{
+  "name": "demux",
+  "version": "1.0.0",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "daemonize-process": "^2.0.1",
+    "node-fetch": "^2.3.0",
+    "zeromq": "^5.1.0"
+  }
+}
